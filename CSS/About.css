@@ -1,0 +1,118 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    background-color: var(--bg-graydark);
+}
+
+.about .container__about {
+    width: 1440px;
+    display: block;
+    padding: 144px 72px;
+}
+
+.about .container__about .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container__about .title .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.bt-outline-gn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--color-green);
+    border-radius: 50px;
+    padding: 16px 24px;
+    margin-bottom: 44px;
+}
+
+.bt-outline-gn-box h2 {
+    color: var(--color-green);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bt-outline-gn-box .circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    margin-left: 10px;
+    background-color: var(--color-green);
+    box-shadow: #35cd9082 0px 0px 10px;
+}
+
+.about .container__about .title .left .left-intro {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 770px;
+    color: var(--color-white);
+    line-height: 2.3;
+    margin-bottom: 30px;
+}
+
+.about .container__about .title .left .box-skill {
+    display: block;
+}
+
+.about .container__about .title .left .box-skill p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-white);
+    line-height: 2.3;
+}
+
+.about .container__about .title .left .box-skill .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: rgb(45, 48, 55);
+    background: linear-gradient(90deg, rgba(45, 48, 55, 1) 0%, rgba(45, 48, 55, 0.22) 100%);
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: default;
+}
+
+
+.about .container__about .title .left .box-skill .box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: var(--color-white);
+    transition: all .3s ease;
+}
+
+.about .container__about .title .left .box-skill .box span:hover {
+    color: var(--color-green);
+}
+
+.about .container__about .title .left .box-skill .box span p {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+.about .container__about .title .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.about .container__about .title .right img {
+    max-width: 68%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

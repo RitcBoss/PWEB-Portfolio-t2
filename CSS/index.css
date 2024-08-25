@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --bg-gray: #1B1F24;
+    --bg-graylong: #2D3037;
+    --bg-graydark: #25282C;
+    --bg-white: #fdfdfd;
+    --color-white: #F0F0F0;
+    --color-hd-white: #F0F0F0;
+    --color-green: #35CD90;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-gray);
+    position: relative;
+    transition: all .6s ease;
+
+}
+
+body.set-mode-light {
+    --bg-gray: #ececec;
+    --bg-graylong: #2D3037;
+    --bg-graydark: #25282C;
+    --bg-white: #fdfdfd;
+    --color-white: #F0F0F0;
+    --color-hd-white: #31404e;
+    --color-green: #35CD90;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(214, 251, 243) 100%);
+
+    .project .container__project .content .item-box .item-box-right:hover {
+        background-color: #aaaaaa6e;
+        border-radius: 8px;
+        box-shadow: rgba(186, 186, 186, 0.2) 0px 2px 8px 0px;
+    }
+
+    .project .container__project .content .item-box .item-box-left .box-outline {
+        border: 2px solid #1b1b1b;
+    }
+
+    .project .container__project .content .item-box .item-box-right {
+        background: linear-gradient(90deg, rgba(17, 167, 162, 0.265) 27%, rgba(53, 205, 144, 0.368) 100%);
+    }
+
+    .main-page .container .main .right .box {
+        background-color: #35CD90;
+        border: 5px solid #35CD90;
+        box-shadow: #ffffff23 15px 5px 25px, #6666667f 0px 5px 10px;
+    }
+
+    .bt-outline-gn-box {
+        background-color: var(--color-green);
+
+    }
+
+    .bt-outline-gn-box h2 {
+        color: #fff;
+    }
+
+    .bt-outline-gn-box .circle {
+        background-color: var(--color-white);
+        box-shadow: #f3f3f3c4 0px 0px 10px;
+    }
+
+    .about {
+        background: linear-gradient(90deg, rgba(49, 88, 124, 0.907) 27%, #1ca5afeb 100%);
+    }
+}

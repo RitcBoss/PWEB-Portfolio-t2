@@ -1,0 +1,88 @@
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 72px;
+}
+
+.main-page .container {
+    width: 1440px;
+    display: block;
+}
+
+.main-page .container .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 244px 0px;
+    /* padding-right: 4rem;
+    padding-left: 4rem; */
+}
+
+.main-page .container .main .left {
+    display: block;
+    justify-content: flex-star;
+    align-items: center;
+    max-width: 730px;
+    cursor: default;
+}
+
+.main-page .container .main .left h1 {
+    color: var(--color-hd-white);
+    font-size: 88px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main-page .container .main .left p {
+    color: var(--color-hd-white);
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.main-page .container .main .left span {
+    color: var(--color-green);
+    font-weight: 600;
+}
+
+.main-page .container .main .left .icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-hd-white);
+
+}
+
+.main-page .container .main .left .icon ion-icon {
+    cursor: pointer;
+}
+
+.main-page .container .main .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page .container .main .right .box {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: rgba(240, 240, 240, 0.183);
+    border: 5px solid #2D3037;
+    box-shadow: #ffffff05 15px 5px 25px, #ffffff06 0px 5px 10px;
+}
+
+.main-page .container .main .right .circle {
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    background-color: #F0F0F0;
+    animation: example 5s linear 3s infinite alternate;
+}

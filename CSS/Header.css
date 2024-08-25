@@ -1,0 +1,113 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+header .container {
+    width: 1440px;
+    display: block;
+    position: relative;
+}
+
+header .container .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .nav-bar ul {
+    display: flex;
+    background-color: var(--bg-graylong);
+    padding: 25px 20px;
+    border-radius: 0px 0px 35px 35px;
+    box-shadow: rgba(0, 0, 0, 0.294) 0px 2px 4px, rgba(0, 0, 0, 0.095) 0px 7px 13px -3px, rgba(0, 0, 0, 0.025) 0px -3px 0px inset;
+    cursor: pointer;
+}
+
+header .container .nav-bar ul li {
+    list-style: none;
+}
+
+header .container .nav-bar ul li a {
+    text-decoration: none;
+    padding: 25px;
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 500;
+    transition: all .3s ease;
+    position: relative;
+}
+
+header .container .nav-bar ul li a:hover {
+    color: #fff;
+}
+
+header .container .nav-bar ul li a .line-show {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all .8s ease;
+    transform: rotateY(100deg);
+}
+
+header .container .nav-bar ul li a:hover>.line-show {
+    transform: rotateY(0deg);
+    width: 25px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: var(--color-green);
+}
+
+
+.mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.mode .mode-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-green);
+    border: 2px solid var(--color-green) ;
+    width: 70px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0px 3px;
+    position: relative;
+}
+
+.mode-dark,.mode-light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-dark,.mode-light ion-icon{
+    color: var(--color-hd-white);
+}
+
+.mode .mode-container .mode-show{
+    background-color: var(--color-white);
+    padding: 15px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    transform: translateX(15px);
+    transition: all .6s ease;
+
+}
+
+.mode .mode-container .mode-show.light{
+    transform: translateX(-15px);
+}
