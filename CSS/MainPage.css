@@ -86,3 +86,37 @@
     background-color: #F0F0F0;
     animation: example 5s linear 3s infinite alternate;
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+    .main-page .container .main .left h1 {
+        font-size: 66px;
+    }
+
+    .main-page .container .main .left p {
+        font-size: 22px;
+    }
+
+    .main-page .container .main .left {
+        max-width: 600px;
+    }
+
+    .main-page .container .main .right .box {
+        width: 250px;
+        height: 100px;
+    }
+
+    .main-page .container .main .right .circle {
+        width: 85px;
+        height: 85px;
+        left: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 942px) {
+    .main-page .container .main .right .box{
+        display: none;
+    }
+}

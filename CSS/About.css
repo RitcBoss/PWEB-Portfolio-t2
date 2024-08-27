@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 72px;
-    background-color: var(--bg-graydark);
+    background-color: transparent;
 }
 
 .about .container__about {
@@ -116,3 +116,86 @@
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+@media only screen and (max-width: 1200px) {
+
+    .about .container__about .title .left .left-intro,
+    .about .container__about .title .left .box-skill p {
+        font-size: 16px;
+    }
+
+    .about .container__about .title .right img {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .about .container__about .title .left .left-intro,
+    .about .container__about .title .left .box-skill p {
+        font-size: 14px;
+    }
+
+    .about .container__about .title .right img {
+        max-width: 77%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+
+    .about .container__about .title .left .left-intro,
+    .about .container__about .title .left .box-skill p {
+        font-size: 13px;
+    }
+
+    .about .container__about .title .right img {
+        max-width: 77%;
+    }
+    .about .container__about .title .left .left-intro{
+        max-width: 600px;
+    }
+    .about .container__about .title .left .box-skill .box span {
+        font-size: 6px;
+    }
+    .about .container__about .title .left .box-skill .box span p{
+        font-size: 8px;
+    }
+    .about .container__about .title .left .box-skill .box{
+        padding: 5px 14px;
+    }
+
+    .bt-outline-gn-box{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .about .container__about .title .left .left-intro,
+    .about .container__about .title .left .box-skill p {
+        font-size: 10px;
+    }
+
+    .about .container__about .title .right img {
+        max-width: 80%;
+    }
+    .about .container__about .title .left .left-intro{
+        max-width: 300px;
+    }
+    .about .container__about .title .left .box-skill .box span {
+        font-size: 6px;
+    }
+    .about .container__about .title .left .box-skill .box span p{
+        font-size: 8px;
+    }
+    .about .container__about .title .left .box-skill .box{
+        padding: 5px 14px;
+    }
+
+    .bt-outline-gn-box{
+        margin-bottom: 20px;
+    }
+}
+

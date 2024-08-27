@@ -22,7 +22,8 @@
 
 
 body {
-    background-color: var(--bg-gray);
+    background: rgb(31,34,34);
+    background: radial-gradient(circle, #2D3037 0%, #161717 100%);
     position: relative;
     transition: all .6s ease;
 
