@@ -1,11 +1,16 @@
 const myBtn = document.getElementById("btn-scroll")
 const scrollHome = document.getElementById("section-home")
+const scrollHomeNav = document.getElementById("section-home-nav")
 const scrollAbout = document.getElementById("section-about")
+const scrollAboutNav = document.getElementById("section-about-nav")
 const scrollPortfolio = document.getElementById("section-port")
-const scrollm = document.getElementById("header-top")
+const scrollPortfolioNav = document.getElementById("section-port-nav")
 const scrollContact = document.getElementById("section-contact")
+const scrollContactNav = document.getElementById("section-contact-nav")
+const scrollm = document.getElementById("header-top")
 const modeModify = document.getElementById("mode-set")
 const bgBody = document.getElementById("background-main")
+const navMenu = document.getElementById("btn-nav-menu")
 
 // Load the mode from localStorage on page load
 window.addEventListener("load", () => {
@@ -44,6 +49,28 @@ function backUpTo() {
     document.body.scrollTop = 0;
 }
 
+function openNavMenu() {
+    navMenu.style.display= "flex"
+    document.body.style.overflow = "hidden"
+}
+
+function closeNavMenu() {
+    navMenu.style.display= "none"
+    document.body.style.overflow = ""
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//nav-menu ---
 scrollAbout.addEventListener("click", () => {
     document.documentElement.scrollTop = 1000;
     document.body.scrollTop = 1000;
@@ -64,12 +91,43 @@ scrollContact.addEventListener("click", () => {
     document.body.scrollTop = 0;
 })
 
+
+//nav-slide-menu ---
+
+scrollAboutNav.addEventListener("click", () => {
+    closeNavMenu()
+    document.documentElement.scrollTop = 1000;
+    document.body.scrollTop = 1000;
+})
+scrollPortfolioNav.addEventListener("click", () => {
+    closeNavMenu()
+    document.documentElement.scrollTop = 2000;
+    document.body.scrollTop = 2000;
+})
+
+scrollHomeNav.addEventListener("click", () => {
+    closeNavMenu()
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+})
+
+scrollContactNav.addEventListener("click", () => {
+    closeNavMenu()
+    document.documentElement.scrollTop = 5000;
+    document.body.scrollTop = 0;
+})
+
+
 ScrollReveal({
     reset: false,
     distance: '100px',
     duration: 2000,
 });
 
+
+
+
+//Animation Scroll//s
 ScrollReveal().reveal('header', { delay: 500, origin: 'top' });
 
 ScrollReveal().reveal('.main-page .container .main .left h1', { delay: 500, });
